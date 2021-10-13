@@ -1,0 +1,309 @@
+                          """     """    """      """     """     """     """     """     """     """     """     """     """
+                          """     """    """      """     """     """     """     """     """     """     """     """     """
+                          """                                                                                             """
+                          """       Para realizar la actividad deberá crear un repositorio propio llamado                 """
+                          """       "nombre-apellido-test" y enviar el link al grupo de WathsApp para ser evaluado.       """
+                          """       Genere un commit por punto y pushee el commit a main.                                 """
+                          """                                                                                             """
+                          """     """    """      """     """     """     """     """     """     """     """     """     """
+                          """     """    """      """     """     """     """     """     """     """     """     """     """
+
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 1: 
+  a- ¿A través de que extension de archivo se genera un script de python? Ejemplifiqué.
+  b- Definir con sus palabras, ¿Qué es una variable?
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a- Los script de python se generan a partir de la extensión " .py ". La cual tiene como funcion: identificar el tipo de lenguaje
+     (en el compilador usado); hace uso de las librerias de este sistema, sus comandos y funciones. Python interpreta los archivos con expension 
+     ".py" como modulo del mismo.
+
+     Podríamos tomar como ejemplo el generar un archivo, en el cual, codificaremos un programa de python. Para comenzar llamaremos al archivo 
+     "ejercitacion.py", de esta manera al comenzar a programar el interprete entendera lo que introduciomos.
+     Después de nombrar el archivo, seleccionando su correcta extensión de lenguaje, podemos seguir programando.
+
+  b- Una variable es un "espacio" o una "caja", en la que se guardan/almacenan diferentes tipos de datos. O tambien podriamos decir que son 
+     etiquetas que señalan datos.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 2:
+  a- Enumere los tipos de datos primitivos. ¿Cual es la diferencia entre el tipo Int y Float?
+  b- Enumere los tipos de colecciones que conoce.  ¿Cual es la diferencia entre los tipos list y tuple?
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a-    Datos primitivos: 
+                            ✦ Numericos - Float(flotantes)  Int(enteros)   Complejos(tienen una parte real y otra imaginaria)
+                            ✦ Booleanos (True/Verdadero o False/Falso)
+                            ✦ String (cadena de texto)
+
+  La diferencia entre un dato Int y otro Float, es que, el Int almacena datos de tipo enteros (1, 2, 5, 23, 345) mientras que el Float almacena 
+  datos/numeros decimales (3.21, 5.1, 3.0, 45.2) .
+
+  b-    Colecciones: 
+                            ✦  Mapas:  Dict(Diccionarios)      
+                            ✦  Secuenciales: Tuple(Tuplas) - List(Listas) - Range
+                            ✦  Conjuntos: Set
+
+  La diferencia es que un dato tipo Tuple es inmutable, esto significa que su contenido no se modifica, por lo tanto es mas eficiente
+  (al momento de compilar) ya que sus datos no cambiaran. En cambio los dato de tipo List son mutable, puede modificarse, su valor si cambia.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 3:
+  Las estructuras selectivas nos permiten tomar desiciones logicas, es decir, se evalua 
+  una condición y en función del resultado se realizarán una determinada serie de instruciones.
+  Se puede hacer uso de las palabra reservadas: 
+                                                  ✦ 1ra.      "if" 
+                                                  ✦ 2da.      "if - else" 
+                                                  ✦ 3ra.      "if - elif - else" 
+
+  Sabiendo esto podemos decir que en python simulamos el comportamiento de un switch a traves de 
+  la tercera estructura antes dicha. Cree un script de python llamado punto_3.py con el siguiente 
+  código dentro: 
+
+                  # Inicio de mi programa
+                  mi_variable = 4
+
+                  if mi_variable == 0:
+                    print("Ha ingresado a la primera validación.")
+
+                  elif mi_variable > 3:
+                    print("Ha ingresado a la segunda validación.")
+
+                  elif mi_variable > 6:
+                    print("Ha ingresado a la tercer validación.")
+
+                  else: 
+                    print("No hay coincidencias.")
+
+                  # Fin del código
+
+   
+Ejecute el código. 
+  a- ¿Cual y por qué es el print que se mustra por consola? 
+  b- Ahora cambie el valor de "mi_variable" 
+
+        mi_variable = 7
+
+  ¿Cual y por qué es el print que se muestra por consola? Describa el resultado. 
+  Puede hacer uso del debug.
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+    a-  El print que se muestra por consola es el sigueinte: Ha ingresado a la segunda validacion.
+        Se muestra por consola este print, ya que en la variable del codigo le dimos un valor de 4, el cual cumple con la condicion de la 
+        segunda validacion de dicho codigo. En esta condicion se dice que si ingresamos un numero, mayor a 3, se ejecute la linea de codigo que 
+        pronunciamos anteriormente.
+
+    b-  En este caso el print mostrado por consola es el mismo que el de la respuesta anterior: Ha ingresado a la segunda validacion.
+        Vemos que se repite el print a pesar de que cambiamos la variable por 7. Según nuestro concepto deberia ejecutarse la estructura de la 
+        tercera condicion, esta dice que todo numero mayor a 6 ingresado, debe retornar por consola el siguiente print: Ha ingresado a la tercer
+        validación.
+        ¿Por qué pasa esto? El error se da porque el codigo debe cumplir cierto comportamiento, es decir, se ejecuta linea por lina, y al tener 
+        primero la linea de la condicion "  elif mi_variable > 3:  " va a tomar todos los numeros mayor a 3, mostrar el print contenido y cerrar 
+        el programa. El programa no seguira ejecutandose si ya una de las condiciones es valida.
+        Podriamos arreglar este error cambiando el posicionamiento de las condiciones, de esta manera:
+
+                # Inicio de mi programa
+                mi_variable = 4
+
+                if mi_variable == 0:
+                    print("Ha ingresado a la primera validación.")
+
+           ⮕   elif mi_variable > 6:
+                    print("Ha ingresado a la segunda validación.")
+
+           ⮕   elif mi_variable > 3:
+                    print("Ha ingresado a la tercer validación.")
+
+                else: 
+                    print("No hay coincidencias.")
+
+                # Fin del código
+
+        Asi el codigo funcionara correctamente.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 4: 
+  Los bucles de iteración nos sirven para recorrer las colecciones. 
+  Con sus palabra responda:
+    a- ¿Cuando corta la iteración un bucle "for" ?
+    b- ¿Cuando termina de iterar un bucle "while" ?
+
+  Cree un script llamado: "punto_4.py" 
+    c- Genere un ejemplo del bucle "for" en el cual recorra los elementos de una lista 
+        y los imprima por consola.
+    d- Genere un ejemplo del bucle "while" en el cual se imprima 5 veces la siguiente 
+        frase por consola: "La condición se cumplio." 
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+    a- La iteración de un bucle "for" termina una vez recorrido todo el elemento ingresado (pueden ser numeros, listas, renge).
+       Cuando ya es iterado (recorido elemento a elemento) todo el cuerpo del bucle este termina.
+
+    b- El bucle "while" finaliza cuando una de sus condiciones retorna falso. Cuando el resultado es True el cuerpo del bucle se ejecuta, 
+       pero cuando este de False se termina la ejecucion.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 5: 
+  a- Git es un sistema para el control de versiones de nuestro codigo. ¿Cuales son las areas que lo componen?
+  b- ¿Con qué comando pasa los cambios realizados del "working directory" al "Staging area"?
+  c- ¿Con qué comando genera un commit?  
+  d- GitHub nos permite alojar los proyectos en la nube. Una vez enlazado el proyecto local con el repositorio remoto, ¿Con qué comando empujamos nuestros cambios?
+  e- Si quisieramos traernos los cambios del repositorio remoto que comando usariamos?
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a- Las áreas que lo componen son las siguientes: 
+                    ✦ Working Directory           ⮕ En esta área es donde editamos y trabajamos los proyectos.
+                    ✦ String área                 ⮕ Escogemos los archivos que se mandaran al commit y se posicionaran en el repositorio local.
+                    ✦ Repository (.git Directory) ⮕ Registro de todo nuestro proyecto.
+
+  b- Para pasar los cambios, realizados en el working directory al Staging area, se ultiliza el comando "git add". 
+  c- Con "git commit -m" podemos generar un commit.
+  d- Los cambios los empujamos con el comando "git remote -v".
+  e- Para traer los cambios del repositorio remoto usamos el comando "git pull".
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 6:
+  Las funciones nos permiten modularizar bloques de codigo y aporta a la reutilización 
+  del mismo. 
+  a- Cree un modulo llamado: "punto_6.py" y dentro defina una función "resta" que reciba como 
+    parametro dos numeros y retorne el resultado de dicha operacion matematica. Documente dicha 
+    función para que explique brevemente cual es su objetivo. 
+    Haga uso de la función que acaba de relizar asignando la devolución de la fn a una variable 
+    resultado, y luego imprima dicha variable. 
+
+  b- Las funciones de orden superior reciben como parametro otras funciones. Enumere cuales conoce
+     y describa brevemente para que sirve cada una. 
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a- Ejercicio y explicación del mismo en punto_6.py.
+  
+  b- Funciones de orden superior:
+                                    ✦ Map()        ⮕   Aplica una función a cada uno de los elementos de una lista.
+                                    ✦ Filter()     ⮕   Filtra una lista de elementos para los que una función devuelve True/Verdadero.
+                                    ✦ Reduce()     ⮕   Llevaa cabo un calculo acumulativo sobre una lista de valores y devolverel resultado.
+                                    ✦ Lamdba()     ⮕   Declara funciones que solo ocupan una linea.
+                                    ✦ Enumerate()  ⮕   Agrega un contador a un iterable y lo devuelve en forma de objeto enumerador.
+                                    ✦ Zip()        ⮕   Mapea los mismos índices en más de un iterable.
+                                    ✦ Sorted()     ⮕   Devuelve una nueva lista que contiene todos los elementos ordenados.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 7: 
+  Cree un script llamado: "punto_7.py" dentro coloque el siguiente codigo:
+
+    # Inicio del programa 
+    def getOne(una_lista):
+      for elemento in una_lista:
+          return elemento
+    
+    def getElements(una_lista):
+      for elemento in una_lista:
+          yield elemento
+    
+    if __name__ == "__main__":
+
+        numeros = [1,2,3,4,5]
+
+        devolución = getOne(numeros)
+
+        print(devolución)
+
+        resultado = list(getElements(numeros))
+
+        print(resultado)
+
+    # Fin del programa
+
+
+  a- ¿Cuál es la diferencia entre el return y el yield en un bucle for?
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a- Return: Retorna un elemento y corta la ejecucion de la funcion.
+     Yield:  Retorna elementos, uno a la vez.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 8: 
+  Si crea un modulo de python modulo_a.py:
+
+    # Inicio del modulo modulo_a.py
+    def hola():
+        print("Hello world!!!")
+
+
+    if __name__ == "__main__":
+        hola()
+
+    # fin del modulo_a
+
+   
+  a- Y luego lo importa en el modulo_b.py ¿Que beneficio le aportaria haber hecho uso de: if __name__ == "__main__": ?
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a- El beneficio que nos brinda es que podemos controlar la ejecucion de nuestros modulos.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 9: 
+  Las excepciones se producen cuando la ejecucion del programa no se ejecuta correctamente.
+  a- ¿Con qué palabra reservada se lanza una excepción ?
+  b- ¿Con qué sentencia se maneja una excepción?
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
+  a- Una palabra exepcion se lanza con la palabra reservada "except".
+  b- Sentencia en que una excepcion se maneja:
+                                                ✦ tratar:
+                                                ✦ subir NameError
+                                                ✦ excepto NameError:
+                                                ✦ print ("Usted ha propagado una excepción.")
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 10:
+
+  a- Explique con sus palabras, ¿Para que sirve un decorador? 
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤: 
+  a- Un decorador es una funcion, la cual toma a otra funcion como argumento para asi devolver una nueva funcion. Se podria decir que es una 
+     funcion que decora o envuelve a otra funcion.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+Punto 11:
+
+   Ejercicio Practico
+
+   a- Crear un programa en el cual el usuario tenga un menu que pueda realizar 
+      las operaciones matematicas basicas (suma, resta, division, multiplicacion). 
+
+    Ejemplo: 
+
+            Menu
+        1- suma
+        2- resta
+        3- division
+        4- multiplicacion
+
+   b- Extender el ejercio anterior, modularizando en funciones cada bloque de codigo 
+      asociado a cada una de las opciones, definir dichas funciones en un archivo 
+      a parte e importalas para hacer uso de ellas. 
+
+   c- Extienda ahora el ejercicio agregando dos opciones al menu: 
+         Menu
+        1- suma
+        2- resta
+        3- division
+        4- multiplicacion
+        5- pares e impares 
+        6- acumulador
+
+      Descripcion: 
+        - pares e impares: debe ingresar 10 numeros por consola e imprimir dos colecciones
+          la coleccion de pares y la coleccion de impares.
+        
+        - acumulador: ingrese 6 numeros por consola los cuales debe validar que sean mayor a 0, 
+          en el caso de que ingresara 0 o un numero negativo debera imprimir el siguiente mensaje:
+
+              "El numero ingresado es menor a 0 vuelva a intentarlo"
+
+    d- Extienda el ejercicio para que ahora la funcion division lance una excepcion en el caso que 
+       el divisor sea 0, luego maneje la excepcion donde este llamando dicha funcion.
+
+ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤: archivo "funciones_punto_11.py" y "punto_11.py"
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
