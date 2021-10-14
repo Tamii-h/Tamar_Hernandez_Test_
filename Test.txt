@@ -7,7 +7,6 @@
                           """                                                                                             """
                           """     """    """      """     """     """     """     """     """     """     """     """     """
                           """     """    """      """     """     """     """     """     """     """     """     """     """
-
 _________________________________________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________________________
 Punto 1: 
@@ -15,16 +14,15 @@ Punto 1:
   b- Definir con sus palabras, ¿Qué es una variable?
 
 ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
-  a- Los script de python se generan a partir de la extensión " .py ". La cual tiene como funcion: identificar el tipo de lenguaje
-     (en el compilador usado); hace uso de las librerias de este sistema, sus comandos y funciones. Python interpreta los archivos con expension 
+  a- Los script de python se generan a partir de la extensión " .py ". La cual tiene como funcion: identificar el tipo de lenguaje (en el compilador usado); 
+     hace uso de las librerias de este sistema, sus comandos y funciones. Python interpreta los archivos con expension 
      ".py" como modulo del mismo.
 
-     Podríamos tomar como ejemplo el generar un archivo, en el cual, codificaremos un programa de python. Para comenzar llamaremos al archivo 
-     "ejercitacion.py", de esta manera al comenzar a programar el interprete entendera lo que introduciomos.
+     Podríamos tomar como ejemplo el generar un archivo, en el cual, codificaremos un programa de python. Para comenzar llamaremos al archivo "ejercitacion.py", 
+     de esta manera al comenzar a programar el interprete entendera lo que introduciomos.
      Después de nombrar el archivo, seleccionando su correcta extensión de lenguaje, podemos seguir programando.
 
-  b- Una variable es un "espacio" o una "caja", en la que se guardan/almacenan diferentes tipos de datos. O tambien podriamos decir que son 
-     etiquetas que señalan datos.
+  b- Una variable es un "espacio" o una "caja", en la que se guardan/almacenan diferentes tipos de datos. O tambien podriamos decir que son etiquetas que señalan datos.
 _________________________________________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________________________
 Punto 2:
@@ -37,29 +35,28 @@ Punto 2:
                             ✦ Booleanos (True/Verdadero o False/Falso)
                             ✦ String (cadena de texto)
 
-  La diferencia entre un dato Int y otro Float, es que, el Int almacena datos de tipo enteros (1, 2, 5, 23, 345) mientras que el Float almacena 
-  datos/numeros decimales (3.21, 5.1, 3.0, 45.2) .
+  La diferencia entre un dato Int y otro Float, es que, el Int almacena datos de tipo enteros (1, 2, 5, 23, 345) mientras que el Float almacena datos/numeros decimales 
+  (3.21, 5.1, 3.0, 45.2) .
 
   b-    Colecciones: 
                             ✦  Mapas:  Dict(Diccionarios)      
                             ✦  Secuenciales: Tuple(Tuplas) - List(Listas) - Range
                             ✦  Conjuntos: Set
 
-  La diferencia es que un dato tipo Tuple es inmutable, esto significa que su contenido no se modifica, por lo tanto es mas eficiente
-  (al momento de compilar) ya que sus datos no cambiaran. En cambio los dato de tipo List son mutable, puede modificarse, su valor si cambia.
+  La diferencia es que un dato tipo Tuple es inmutable, esto significa que su contenido no se modifica, por lo tanto es mas eficiente (al momento de compilar) ya que 
+  sus datos no cambiaran. En cambio los dato de tipo List son mutable, puede modificarse, su valor si cambia.
 _________________________________________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________________________
 Punto 3:
-  Las estructuras selectivas nos permiten tomar desiciones logicas, es decir, se evalua 
-  una condición y en función del resultado se realizarán una determinada serie de instruciones.
+  Las estructuras selectivas nos permiten tomar desiciones logicas, es decir, se evalua una condición y en función del resultado se realizarán una determinada serie 
+  de instruciones.
   Se puede hacer uso de las palabra reservadas: 
                                                   ✦ 1ra.      "if" 
                                                   ✦ 2da.      "if - else" 
                                                   ✦ 3ra.      "if - elif - else" 
 
-  Sabiendo esto podemos decir que en python simulamos el comportamiento de un switch a traves de 
-  la tercera estructura antes dicha. Cree un script de python llamado punto_3.py con el siguiente 
-  código dentro: 
+  Sabiendo esto podemos decir que en python simulamos el comportamiento de un switch a traves de la tercera estructura antes dicha. Cree un script de python llamado 
+  punto_3.py con el siguiente código dentro: 
 
                   # Inicio de mi programa
                   mi_variable = 4
@@ -90,17 +87,15 @@ Ejecute el código.
 
 ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
     a-  El print que se muestra por consola es el sigueinte: Ha ingresado a la segunda validacion.
-        Se muestra por consola este print, ya que en la variable del codigo le dimos un valor de 4, el cual cumple con la condicion de la 
-        segunda validacion de dicho codigo. En esta condicion se dice que si ingresamos un numero, mayor a 3, se ejecute la linea de codigo que 
-        pronunciamos anteriormente.
+        Se muestra por consola este print, ya que en la variable del codigo le dimos un valor de 4, el cual cumple con la condicion de la segunda validacion de dicho
+        codigo. En esta condicion se dice que si ingresamos un numero, mayor a 3, se ejecute la linea de codigo que pronunciamos anteriormente.
 
     b-  En este caso el print mostrado por consola es el mismo que el de la respuesta anterior: Ha ingresado a la segunda validacion.
-        Vemos que se repite el print a pesar de que cambiamos la variable por 7. Según nuestro concepto deberia ejecutarse la estructura de la 
-        tercera condicion, esta dice que todo numero mayor a 6 ingresado, debe retornar por consola el siguiente print: Ha ingresado a la tercer
-        validación.
-        ¿Por qué pasa esto? El error se da porque el codigo debe cumplir cierto comportamiento, es decir, se ejecuta linea por lina, y al tener 
-        primero la linea de la condicion "  elif mi_variable > 3:  " va a tomar todos los numeros mayor a 3, mostrar el print contenido y cerrar 
-        el programa. El programa no seguira ejecutandose si ya una de las condiciones es valida.
+        Vemos que se repite el print a pesar de que cambiamos la variable por 7. Según nuestro concepto deberia ejecutarse la estructura de la tercera condicion,
+         esta dice que todo numero mayor a 6 ingresado, debe retornar por consola el siguiente print: Ha ingresado a la tercer validación.
+        ¿Por qué pasa esto? El error se da porque el codigo debe cumplir cierto comportamiento, es decir, se ejecuta linea por lina, y al tener primero la linea de la
+        condicion "  elif mi_variable > 3:  " va a tomar todos los numeros mayor a 3, mostrar el print contenido y cerrar el programa. 
+        El programa no seguira ejecutandose si ya una de las condiciones es valida.
         Podriamos arreglar este error cambiando el posicionamiento de las condiciones, de esta manera:
 
                 # Inicio de mi programa
@@ -130,17 +125,15 @@ Punto 4:
     b- ¿Cuando termina de iterar un bucle "while" ?
 
   Cree un script llamado: "punto_4.py" 
-    c- Genere un ejemplo del bucle "for" en el cual recorra los elementos de una lista 
-        y los imprima por consola.
-    d- Genere un ejemplo del bucle "while" en el cual se imprima 5 veces la siguiente 
-        frase por consola: "La condición se cumplio." 
+    c- Genere un ejemplo del bucle "for" en el cual recorra los elementos de una lista y los imprima por consola.
+    d- Genere un ejemplo del bucle "while" en el cual se imprima 5 veces la siguiente frase por consola: "La condición se cumplio." 
 
 ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
-    a- La iteración de un bucle "for" termina una vez recorrido todo el elemento ingresado (pueden ser numeros, listas, renge).
-       Cuando ya es iterado (recorido elemento a elemento) todo el cuerpo del bucle este termina.
+    a- La iteración de un bucle "for" termina una vez recorrido todo el elemento ingresado (pueden ser numeros, listas, renge). 
+    Cuando ya es iterado (recorido elemento a elemento) todo el cuerpo del bucle este termina.
 
-    b- El bucle "while" finaliza cuando una de sus condiciones retorna falso. Cuando el resultado es True el cuerpo del bucle se ejecuta, 
-       pero cuando este de False se termina la ejecucion.
+    b- El bucle "while" finaliza cuando una de sus condiciones retorna falso. Cuando el resultado es True el cuerpo del bucle se ejecuta, pero cuando este de False se
+       termina la ejecucion.
 _________________________________________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________________________
 Punto 5: 
@@ -163,16 +156,12 @@ Punto 5:
 _________________________________________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________________________
 Punto 6:
-  Las funciones nos permiten modularizar bloques de codigo y aporta a la reutilización 
-  del mismo. 
-  a- Cree un modulo llamado: "punto_6.py" y dentro defina una función "resta" que reciba como 
-    parametro dos numeros y retorne el resultado de dicha operacion matematica. Documente dicha 
-    función para que explique brevemente cual es su objetivo. 
-    Haga uso de la función que acaba de relizar asignando la devolución de la fn a una variable 
-    resultado, y luego imprima dicha variable. 
+  Las funciones nos permiten modularizar bloques de codigo y aporta a la reutilización del mismo. 
+  a- Cree un modulo llamado: "punto_6.py" y dentro defina una función "resta" que reciba como parametro dos numeros y retorne el resultado de dicha operacion 
+     matematica. Documente dicha función para que explique brevemente cual es su objetivo. 
+     Haga uso de la función que acaba de relizar asignando la devolución de la fn a una variable resultado, y luego imprima dicha variable. 
 
-  b- Las funciones de orden superior reciben como parametro otras funciones. Enumere cuales conoce
-     y describa brevemente para que sirve cada una. 
+  b- Las funciones de orden superior reciben como parametro otras funciones. Enumere cuales conoce y describa brevemente para que sirve cada una. 
 
 ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤:
   a- Ejercicio y explicación del mismo en punto_6.py.
@@ -260,16 +249,15 @@ Punto 10:
   a- Explique con sus palabras, ¿Para que sirve un decorador? 
 
 ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤: 
-  a- Un decorador es una funcion, la cual toma a otra funcion como argumento para asi devolver una nueva funcion. Se podria decir que es una 
-     funcion que decora o envuelve a otra funcion.
+  a- Un decorador es una funcion, la cual toma a otra funcion como argumento para asi devolver una nueva funcion. Se podria decir que es una funcion que decora o 
+     envuelve a otra funcion.
 _________________________________________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________________________
 Punto 11:
 
    Ejercicio Practico
 
-   a- Crear un programa en el cual el usuario tenga un menu que pueda realizar 
-      las operaciones matematicas basicas (suma, resta, division, multiplicacion). 
+   a- Crear un programa en el cual el usuario tenga un menu que pueda realizar las operaciones matematicas basicas (suma, resta, division, multiplicacion). 
 
     Ejemplo: 
 
@@ -279,8 +267,7 @@ Punto 11:
         3- division
         4- multiplicacion
 
-   b- Extender el ejercio anterior, modularizando en funciones cada bloque de codigo 
-      asociado a cada una de las opciones, definir dichas funciones en un archivo 
+   b- Extender el ejercio anterior, modularizando en funciones cada bloque de codigo asociado a cada una de las opciones, definir dichas funciones en un archivo 
       a parte e importalas para hacer uso de ellas. 
 
    c- Extienda ahora el ejercicio agregando dos opciones al menu: 
@@ -293,17 +280,14 @@ Punto 11:
         6- acumulador
 
       Descripcion: 
-        - pares e impares: debe ingresar 10 numeros por consola e imprimir dos colecciones
-          la coleccion de pares y la coleccion de impares.
+        - pares e impares: debe ingresar 10 numeros por consola e imprimir dos colecciones la coleccion de pares y la coleccion de impares.
         
-        - acumulador: ingrese 6 numeros por consola los cuales debe validar que sean mayor a 0, 
-          en el caso de que ingresara 0 o un numero negativo debera imprimir el siguiente mensaje:
+        - acumulador: ingrese 6 numeros por consola los cuales debe validar que sean mayor a 0, en el caso de que ingresara 0 o un numero negativo debera imprimir
+          el siguiente mensaje:
 
               "El numero ingresado es menor a 0 vuelva a intentarlo"
 
-    d- Extienda el ejercicio para que ahora la funcion division lance una excepcion en el caso que 
-       el divisor sea 0, luego maneje la excepcion donde este llamando dicha funcion.
+    d- Extienda el ejercicio para que ahora la funcion division lance una excepcion en el caso que el divisor sea 0, luego maneje la excepcion donde este llamando 
+       dicha funcion.
 
 ℝ𝕖𝕤𝕡𝕦𝕖𝕤𝕥𝕒𝕤: archivo "funciones_punto_11.py" y "punto_11.py"
-_________________________________________________________________________________________________________________________________________________________________________________________________
-_________________________________________________________________________________________________________________________________________________________________________________________________
